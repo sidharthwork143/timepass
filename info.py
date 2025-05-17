@@ -5,10 +5,10 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'ZahidBot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+SESSION = environ.get('SESSION', 'gojoBot')
+API_ID = int(environ.get('API_ID', '20612439'))
+API_HASH = environ.get('API_HASH', '6713c32d1216016b3d81efac3cdcdfba')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6713467384:AAF5clJ8t38edv1xL6m7D5QrjReZ52dm6SQ")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -21,7 +21,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002230949609'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002095974601'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002509332985').split()]  # For Multiple Id Use One Space Between Each.
@@ -32,11 +32,11 @@ REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set Tr
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
 
 # This Is Force Subscribe Channel, also known as Auth Channel
-auth_channel = environ.get('AUTH_CHANNEL', '-1001864718283') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1001863639023') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request Any File Name With command or hashtag like - /request or #request
-reqst_channel = environ.get('REQST_CHANNEL', '-1002449998220')
+reqst_channel = environ.get('REQST_CHANNEL', '-1002095974601')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 # This Channel Is For Index Request
@@ -64,9 +64,9 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ZahidNazir:ZahidNazir@1stcluster.1p0dlne.mongodb.net/?retryWrites=true&w=majority&appName=1stcluster")   # IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "WisionXbot")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'WisionXCollections')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://chintubru57:BGry1i2E4yERQmZe@chintubru.i3kvekw.mongodb.net/?retryWrites=true&w=majority&appName=chintubru")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_NAME = environ.get('DATABASE_NAME', "test")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'test')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
@@ -96,10 +96,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/selfimprovementbooks1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Self_Improvement_Audiobooks')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Self_Improvement_AudioBook_Bot') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Self_Improvement_AudioBook_Bot')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/FmDiscusss')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/filmy_men')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'FmDiscusss') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/gojo_satoruji')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -111,7 +111,7 @@ IMDB = bool(environ.get('IMDB', False))
 AUTO_FFILTER = bool(environ.get('AUTO_FFILTER', True))
 AUTO_DELETE = bool(environ.get('AUTO_DELETE', True))
 LONG_IMDB_DESCRIPTION = bool(environ.get("LONG_IMDB_DESCRIPTION", False))
-SPELL_CHECK_REPLY = bool(environ.get("SPELL_CHECK_REPLY", False))
+SPELL_CHECK_REPLY = bool(environ.get("SPELL_CHECK_REPLY", True))
 MELCOW_NEW_USERS = bool(environ.get('MELCOW_NEW_USERS', True))
 PROTECT_CONTENT = bool(environ.get('PROTECT_CONTENT', False))
 PUBLIC_FILE_STORE = bool(environ.get('PUBLIC_FILE_STORE', False)) # Set True or False
