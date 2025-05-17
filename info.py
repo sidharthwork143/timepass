@@ -16,8 +16,8 @@ PICS = (environ.get('PICS', 'https://envs.sh/kz_.jpg')).split()
 
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1178233430 1160901162').split()] # For Multiple Id Use One Space Between Each.
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1178233430 1160901162').split()]  # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5555597971').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5555597971').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
@@ -47,10 +47,10 @@ support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002449998220')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # This Channel Is For /batch command file store.
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002509332985')).split()]  # For Multiple Id Use One Space Between Each.
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002095974601')).split()]  # For Multiple Id Use One Space Between Each.
 
-DB_CHANNEL = int(environ.get("DB_CHANNEL", "-1002509332985")) 
-SECONDARY_DB_CHANNEL = int(environ.get("SECONDARY_DB_CHANNEL", "-1002141494142")) #file chaneel 
+DB_CHANNEL = int(environ.get("DB_CHANNEL", "-1001641766504")) 
+SECONDARY_DB_CHANNEL = int(environ.get("SECONDARY_DB_CHANNEL", "-1001641766504")) #file chaneel 
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "360")) # Time in Seconds
 AUTO_DELETE_MIN = int(environ.get("AUTO_DELETE_MIN", "6")) # Time in Minutes
 
