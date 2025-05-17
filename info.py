@@ -24,7 +24,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002095974601'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002509332985').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001641766504').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
@@ -49,8 +49,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 # This Channel Is For /batch command file store.
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002095974601')).split()]  # For Multiple Id Use One Space Between Each.
 
-DB_CHANNEL = int(environ.get("DB_CHANNEL", "-1001641766504")) 
-SECONDARY_DB_CHANNEL = int(environ.get("SECONDARY_DB_CHANNEL", "-1001641766504")) #file chaneel 
+DB_CHANNEL = int(environ.get("DB_CHANNEL", "-1002095974601")) 
+SECONDARY_DB_CHANNEL = int(environ.get("SECONDARY_DB_CHANNEL", "-1002095974601")) #file chaneel 
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "360")) # Time in Seconds
 AUTO_DELETE_MIN = int(environ.get("AUTO_DELETE_MIN", "6")) # Time in Minutes
 
