@@ -55,7 +55,7 @@ AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "360")) # Time in Seconds
 AUTO_DELETE_MIN = int(environ.get("AUTO_DELETE_MIN", "6")) # Time in Minutes
 
 # Website Info:
-WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', True)) # Set True or False
+WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
 # If Website Url Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 WEBSITE_URL = environ.get("WEBSITE_URL", "https://wisionx.42web.io") # For More Information Check Video On Yt -
 
